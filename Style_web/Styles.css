@@ -1,0 +1,44 @@
+
+.header_1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    height: fit-content;
+    
+}
+
+
+.danh_sach{
+    font-size: large;
+    list-style-type: circle;
+    margin:5px;
+    padding:px
+}
+body{
+    background-color: #000000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+.line:nth-child(1) { animation-delay: 0s; }
+.line:nth-child(2) { animation-delay: 0.2s; }
+.line:nth-child(3) { animation-delay: 0.4s; }
+.line:nth-child(4) { animation-delay: 0.6s; }
+@keyframes slideInLeft {
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
