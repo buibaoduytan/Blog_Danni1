@@ -1,44 +1,80 @@
-
-.header_1 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-    height: fit-content;
-    
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-
-.danh_sach{
-    font-size: large;
-    list-style-type: circle;
-    margin:5px;
-    padding:px
+.fadein {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: truotdoc 0.8s ease-out forwards;
 }
-body{
-    background-color: #000000;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    animation: slideInLeft 0.6s ease-out forwards;
-}
-.line:nth-child(1) { animation-delay: 0s; }
-.line:nth-child(2) { animation-delay: 0.2s; }
-.line:nth-child(3) { animation-delay: 0.4s; }
-.line:nth-child(4) { animation-delay: 0.6s; }
-@keyframes slideInLeft {
+.fadein:nth-child(1) { animation-delay: 0.2s; }
+.fadein:nth-child(2) { animation-delay: 0.4s; }
+.fadein:nth-child(3) { animation-delay: 0.6s; }
 
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+@keyframes truotdoc {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Logo hình tròn trượt từ trái qua */
+.hinhvuong {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #57aafd;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100px);
+  animation: truottrai 1s ease-in-out forwards;
+}
+.hinhvuong img {
+  width: 50%;
+  height: auto;
+  display: block;
+}
+@keyframes truottrai {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.danh_sach {
+  display: inline-flex;
+  font-size: 30px;
+  list-style: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 20px;
+  transition: 0.3s;
+  text-shadow: 0 0 10px #0ff, 0 0 10px rgb(39, 255, 255);
+  margin-top: 20px;
+}
+.danh_sach:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #0ff, 0 0 10px rgb(39, 255, 255);
+  cursor: pointer;
+  color: #00ff48;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bolder;
 }
