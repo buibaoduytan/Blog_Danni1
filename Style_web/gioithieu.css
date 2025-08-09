@@ -10,5 +10,5 @@ body{
     animation: fadeIn 1.5s forwards;
 }
 svg{
-    fill:white;
+    fill:rgb(0, 153, 255);
 }
