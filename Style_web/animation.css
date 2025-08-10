@@ -9,9 +9,6 @@
   }
 
 
-
-
-
   @keyframes truotdoc {
     from {
       opacity: 0;
@@ -22,4 +19,18 @@
       transform: translateY(0);
     }
   }
+
+  @keyframes phatsang {
+    0% {
+      box-shadow: 0 0 20px rgba(128, 0, 128, 0);
+    }
+    100% {
+      box-shadow: 0 0 40px rgba(195, 0, 255, 12);
+    }
+  }
+
+
+  
+
+
 
