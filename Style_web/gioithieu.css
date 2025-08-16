@@ -2,13 +2,3 @@ body{
     background-color:rgb(173, 117, 117);
     color:whitesmoke;
 }
- 
-
-.Thong_tin2{
-    filter: grayscale(100%);
-    opacity: 0;
-    animation: fadeIn 1.5s forwards;
-}
-svg{
-    fill:rgb(0, 153, 255);
-}
