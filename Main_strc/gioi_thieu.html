@@ -1,30 +1,53 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="../Style_web/gioithieu.css">
-        <link rel="stylesheet" href="../Style_web/animation.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="../Style_web/gioithieu.css">
+  <link rel="stylesheet" href="../Style_web/animation.css">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans&display=swap" rel="stylesheet"/>
 
-    </head>
-    <body>
-      <div class="lienketrang">
-      <a href="blog_1.html">Quay lại trang</a>
-      </div>
+</head>
 
-      <div class="gioithieu">
-        <h1>Giới thiệu về Danni (Duy Tân)</h1>
-        <p>
-          Chào mừng bạn đến với trang giới thiệu của mình! Mình là Duy Tân, một Full Stack Web Developer đam mê công nghệ và sáng tạo. Mình yêu thích việc xây dựng các ứng dụng web đẹp mắt và hiệu quả, từ giao diện người dùng đến phần backend.
-        </p>
-        <p>
-          Với kinh nghiệm trong HTML, CSS, JavaScript và các framework hiện đại, mình luôn tìm kiếm cơ hội để học hỏi và phát triển kỹ năng của mình. Mình tin rằng công nghệ có thể thay đổi thế giới và mình muốn đóng góp vào điều đó.
-        </p>
-      </div>
-    </body>
+<body>
+  <script src="../JS/gioithieu.js"></script>
+  
+  <div class="lienketrang">
+    <a href="blog_1.html">
+      <img src="../Hinh_anh/ReturnButton.png" alt="Quay lại" width="100">
+    </a>  
+  </div>
+
+  <div class="gioithieu">
+    <span>Giới</span>
+    <span>thiệu</span>
+    <span>về</span>
+    <span>Danni</span>
+    <span> (Duy Tân)</span>
+  </div>
+
+<div class="menu">
+  <button onclick="openTab('home')">Home</button>
+  <button onclick="openTab('blog')">Blog</button>
+  <button onclick="openTab('contact')">Contact</button>
+</div>
+  <div class="tabbar">
+
+  <div id="home">Nội dung Home</div>
+  <div id="blog" style="display:none;">    
+    <p>
+    Chào mừng bạn đến với trang giới thiệu của mình! Mình là Duy Tân, một Full Stack Web Developer đam mê công nghệ và sáng tạo. Mình yêu thích việc xây dựng các ứng dụng web đẹp mắt và hiệu quả, từ giao diện người dùng đến phần backend.
+  </p>
+  <p>
+    Với kinh nghiệm trong HTML, CSS, JavaScript và các framework hiện đại, mình luôn tìm kiếm cơ hội để học hỏi và phát triển kỹ năng của mình. Mình tin rằng công nghệ có thể thay đổi thế giới và mình muốn đóng góp vào điều đó.
+  </p></div>
+  <div id="contact" style="display:none;">Nội dung Contact</div>
+  
+</div>
+
+</body>
 </html>
